@@ -434,6 +434,11 @@ a img:hover, a img:focus{
   padding-top: 2rem;
 }
 
+.contactInfo{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
 /*
 
 #aboutContainer1{
@@ -520,15 +525,19 @@ a img:hover, a img:focus{
 */
 
 /*project spacing*/
-.projectSpacing{
+.projectSpacing1{
   padding-top:2rem;
+}
+
+.projectSpacing2{
+  padding-top:6rem;
 }
 
 
 
 
-/*project1 page Styles*/
-.project1{
+/*project page Styles*/
+.project{
   display: flex;
   align-items: baseline;
   flex-direction: column;
@@ -554,14 +563,14 @@ a img:hover, a img:focus{
   align-items: flex-start;
 }*/
 
-.project1 p{
+.project p{
   padding-bottom:2rem; 
   padding-top:0.5rem;
   max-width:70%;
   min-width: 20rem;
 }
 
-.project1 img {
+.project img {
   min-width: 80%;
   max-width:100%;
   height: auto;

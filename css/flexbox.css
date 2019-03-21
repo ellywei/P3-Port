@@ -11,6 +11,19 @@
     flex-direction: column;
   }
 
+  #navOptions{
+    padding-top: 1rem;
+  }
+
+  #homepageNav #navOptions nav a{
+    display: flex;
+    align-items: right;
+    flex-direction: row;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  
+
   /*homepage responsiveness*/
   .homeContainer{
     display: flex;
@@ -29,70 +42,32 @@
     right: 5rem;
   }
 
-  /*project1 responsiveness*/
+  /*project pages responsiveness*/
 
-  .project1 {
+  .project {
     padding-left: 5rem; 
   }
 
-  .project1 p{
+  .project p{
 /*    max-width: 100%;
 */    min-width: 90%;
   }
 
-
-  .Product_Listing {
+  /*about page responsiveness*/
+  #aboutContainer{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: column; 
   }
 
-  #aboutContainer1{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  #aboutContainer img{
+    min-width:90%;
+    min-height:90%; 
   }
 
-  #aboutContainer2{
-  	display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-
-
-  .events{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .row{
-  flex-direction: column-reverse;
-  }
-
-  .col-20{
-    margin-top: 20px;
-  }
-
-
-  #navOptions{
-    padding-top: 1rem;
-  }
-  .col-22{
-    margin-bottom: 20px;
-  }
-
-  #homepageNav #navOptions nav a{
-    display: flex;
-    align-items: right;
-    flex-direction: row;
-    text-align: right;
-    justify-content: flex-end;
-  }
-
-  #Product_Detail h4{
-    max-width: 80%;
+  #aboutContainer h2 h6{
+/*    max-width: 100%;
+*/    min-width: 100%;
   }
 
 }
