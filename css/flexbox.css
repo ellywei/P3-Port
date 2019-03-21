@@ -46,6 +46,7 @@
 
   .project {
     padding-left: 5rem; 
+    padding-right: 1.5rem;
   }
 
   .project p{
@@ -54,18 +55,20 @@
   }
 
   /*about page responsiveness*/
-  #aboutContainer section{
+  #aboutContainer{
     display: flex;
     justify-content: flex-start;
     flex-direction: column; 
+    padding-left: 6rem;
+    padding-right: 1rem;
   }
 
   #aboutContainer img{
-    min-width:90%;
-    min-height:90%; 
+    min-width:100%;
+    min-height:100%; 
   }
 
-  #aboutContainer h2 h6{
+  #aboutText{
 /*    max-width: 100%;
 */    min-width: 100%;
   }
