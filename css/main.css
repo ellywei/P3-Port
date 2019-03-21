@@ -414,6 +414,14 @@ a img:hover, a img:focus{
   margin-top: 5rem;
  }
 
+#aboutContainer h2{
+  padding-top: 4rem;
+}
+
+#aboutContainer h4{
+  padding-top: 2rem;
+}
+
 /*
 
 #aboutContainer1{
