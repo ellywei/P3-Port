@@ -35,6 +35,11 @@
     padding-left: 5rem; 
   }
 
+  .project1 p{
+/*    max-width: 100%;
+*/    min-width: 90%;
+  }
+
 
   .Product_Listing {
     display: flex;
@@ -54,9 +59,7 @@
     flex-direction: column;
   }
 
-  #aboutContainer2 p{
-    max-width: 100%;
-  }
+
 
   .events{
     display: flex;

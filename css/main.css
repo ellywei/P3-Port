@@ -21,13 +21,7 @@ body {
   margin:0;
 }
 
-/*homepage background pic styling*/
-#homepic{ 
-  padding-left: 5rem;
-  padding-bottom:5rem;
-  width: 70%;
-  height: auto;
-}
+
 
 /*homepage style*/
 .index{
@@ -37,15 +31,24 @@ body {
 .homeContainer{
   position: relative;
   text-align: left;
+  margin-bottom:3rem;
   overflow: hidden;
 }
 
 .homeText{
   position: absolute;
   bottom: 5rem;
-  right: 20rem;
+  right: 15rem;
+  padding-bottom: 3rem;
 }
 
+/*homepage background pic styling*/
+#homepic{ 
+  padding-left: 5rem;
+  padding-bottom:5rem;
+  width: 70%;
+  height: auto;
+}
 
 /*style guide page style*/
 #style_guide_body{
@@ -136,7 +139,8 @@ h2 {
   font-size: 5rem;
   color: #000000;
   text-decoration:none;
-
+  padding-bottom:1rem; 
+  margin-left:-0.4rem; 
 }
 
 h3 {
@@ -148,6 +152,8 @@ h3 {
   font-size: 2rem;
   color: #3541f5;
   text-decoration:none;
+  padding-top: 4rem;
+  padding-bottom: 0.5rem;
 }
 
 h4 {
@@ -164,7 +170,7 @@ h4 {
 h5{
   font-family: 'Barlow', sans-serif;
   letter-spacing: 0.5px;
-/*line-height: 1.4;*/  
+  line-height: 1.5;  
   font-weight: 600;
   margin: 0rem;
   font-size: 1.5rem;
@@ -205,6 +211,12 @@ p{
 
 }
 
+
+img {
+  padding-top:2rem;
+  width: auto;
+  height: 100%;
+}
 
 
 #homeimg{
@@ -507,6 +519,13 @@ a img:hover, a img:focus{
 }
 */
 
+/*project spacing*/
+.projectSpacing{
+  padding-top:2rem;
+}
+
+
+
 
 /*project1 page Styles*/
 .project1{
@@ -520,7 +539,7 @@ a img:hover, a img:focus{
 
 }
 
-.project1 div{
+/*.project1 div{
   padding:1em 2em;
   display: flex;
   align-items: center;
@@ -528,15 +547,16 @@ a img:hover, a img:focus{
   justify-content: center;
   max-width: 60%;
   text-align: left;
-}
-
+}*/
+/*
 .project1 h2 h5 p {
   padding: 1em 1em;
   align-items: flex-start;
-}
+}*/
 
 .project1 p{
-  padding: 2em 1em;
+  padding-bottom:2rem; 
+  padding-top:0.5rem;
   max-width:70%;
   min-width: 20rem;
 }
@@ -702,10 +722,7 @@ a img:hover, a img:focus{
   max-width:100%;
 
 }
-img {
-  width: auto;
-  height: 100%;
-}
+
 
 .container {
   padding: 5px 20px 15px 20px;
