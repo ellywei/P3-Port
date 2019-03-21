@@ -54,7 +54,7 @@
   }
 
   /*about page responsiveness*/
-  #aboutContainer{
+  #aboutContainer section{
     display: flex;
     justify-content: flex-start;
     flex-direction: column; 
