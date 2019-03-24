@@ -3,7 +3,7 @@
 }
 
 
-@media(max-width:50rem){
+@media(max-width:60rem){
   /*navigation responsiveness*/
   .navigation{
     display: flex;
@@ -37,8 +37,8 @@
   }
 
   .homeText{
-    position: absolute;
-    bottom: 2rem;
+/*    position: absolute;
+*/    bottom: 2rem;
     right: 5rem;
   }
 
@@ -72,6 +72,23 @@
 /*    max-width: 100%;
 */    min-width: 100%;
   }
+
+  /*footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 0.1rem;
+
+}
+
+footer a{
+  padding-right: 0.5rem;
+  padding-bottom: 0.1rem;
+  text-decoration: none;
+  color: #3541f5;
+}
+
 
 }
 

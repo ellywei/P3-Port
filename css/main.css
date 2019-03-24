@@ -68,8 +68,11 @@ body {
   padding-left: 2rem;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
-}
 
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+/*  width: 100%;*/ /* Full width */
+}
 
 .navigation a{
   text-decoration: none;
@@ -100,22 +103,7 @@ nav a:active{
   text-decoration: none;  
 }
 
-
-
-.element {
-  padding-bottom: 1rem;
-/*  border-top-width: 0.15rem;*/
-  border-top-style: solid;
-  border-top-color: #C1A693;
-}
-
-/*changing input and label styles*/
-label{
-  color:#4CAF50;
-  min-width:2rem; 
-  margin: 0.5em;
-  display: inline-block;
-}
+/*headings styling*/
 
 h1{
   font-family: 'Barlow', sans-serif;
@@ -176,7 +164,6 @@ h5{
   font-size: 1.5rem;
   color: #8f8f90;
   text-decoration:none;
-
 }
 
 h6{
@@ -188,16 +175,9 @@ h6{
   font-size: 1.5rem;
   color: #000000;
   text-decoration:none;
-
 }
 
-/*change label style*/
-label{
-  font-style: normal;
-  font-size:0.8rem;
-}
-
-/*change paragraph style*/
+/* paragraph style*/
 p{
   font-family: 'Barlow', sans-serif;
   letter-spacing: 0.6px;
@@ -208,16 +188,14 @@ p{
   color: #000000;
   text-decoration:none;
   max-width: 28em;
-
 }
 
-
+/* img style*/
 img {
   padding-top:2rem;
   width: auto;
   height: 100%;
 }
-
 
 #homeimg{
 	height: 100%;
@@ -229,14 +207,7 @@ img {
   padding-bottom: 0.5rem;
 }
 
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-  max-width: 80%;
-
-}
-
+/*section element styles*/
 section {  
 /*  margin-top: 1em;
 */  margin-bottom: 2rem;
@@ -245,29 +216,6 @@ section {
 
 /* 
   INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Branding styling */
-/*#brand a{
-  font-family: 'Barlow', sans-serif;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  font-style: italic;
-  font-weight: 600;
-
-}
-*/
-
-
-/*.brand a{
-  text-decoration: none;
-  display: inline-block;
-
-}
-
-.brand a:hover, .brand a:focus {
-  text-decoration: none;
-}
 */
 /* Styling for the navigation button */
 .button-nav {
@@ -289,9 +237,6 @@ section {
   color: white;
 }
 
-.navigation{
-    align-items: right;
-}
 
 /*changing intext link styles*/
 
@@ -308,111 +253,22 @@ section {
   color: #3541f5;
 }
 
-/*changing ImageLink styles*/
-a img:hover, a img:focus{
-  opacity: 0.3;
+/*intext link for contact styles*/
+#inText2 a{
+  display: inline-block;
+  font-weight: 400;
+  font-size:1.5rem;
+  letter-spacing: 0.03rem;
+  color:#3541f5;
+  transition-property: color; 
+  transition-duration: 0.25s;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
 }
 
-.linkImageText {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+#inText2 a:hover, #inText2 a:focus{
+  color: #222455;
 }
-
-#imgFrame{
-  width: 20rem;
-  height: 20rem;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* 
-  Color Palette Block -------------------
-*/
-.color1 {
-  margin-top: 10px: 
-  height: 50px;
-  width: 200px;
-  background-color: #4CAF50;
-}
-
-.color2 {
-  height: 50px;
-  width: 200px;
-  background-color: #C1A693;
-}
-
-.color3 {
-  height: 50px;
-  width: 200px;
-  background-color: #4CAF50;
-  border-style: solid;
-  border-width: 0.3px;
-}
-
-.color4 {
-  height: 50px;
-  width: 200px;
-  background-color: #000;
-  color:#fff;
-
-}
-
-
-
-/*COMBINED ELEMENTS -------------------*/
-
-/*Product_listing Styles*/
-/*.Product_Listing{
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-.Product_Listing div{
-  padding:1em 2em;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column ;
-  justify-content: space-around;
-  max-width: 90%;
-  text-align: center;
-}
-*/
-/*.Product_Listing img {
-  width: 100%;
-  height: 100%;
-}
-
-#Product_1{
-  flex:1;
-  order:1;
-}
-
-#Product_2{
-  flex:1;
-  order:2;
-}
-
-#Product_3{
-  flex:1;
-  order:3;
-}
-
-#Product_Detail a img{
-  width: 50%;
-  height: 50%;
-}
-
-#Product_Detail h4{
-  max-width: 50%;
-}*/
 
 /*About page Styles*/
 
@@ -428,6 +284,9 @@ a img:hover, a img:focus{
  }
 
 #aboutContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-left: 20rem;
   padding-right:5rem;
  }
@@ -443,16 +302,19 @@ a img:hover, a img:focus{
 }
 
 .contactInfo{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; 
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
 /*project spacing*/
-.projectSpacing1{
+#projectSpacing1{
   padding-top:2rem;
 }
 
-.projectSpacing2{
+#projectSpacing2{
   padding-top:6rem;
 }
 
@@ -511,168 +373,6 @@ a img:hover, a img:focus{
   width: auto;
 }
 
-/*Payment form styles*/
-
-.Checkout{
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-around;
-}
-#cart-title{
-  text-align: center;
-  padding-bottom:2rem; 
-}
-
-.container-check{
-  justify-content: center;
-}
-.Checkout form {
-  width: 30%;
-  padding: 12px 20px;
-  border: 1.5px solid #C1A693;
-  border-radius: 5px;
-}
-
-.Checkout .price{
-  font-style: italic;
-  color:#4CAF50;
-}
-.col-50 .price-total{
-  font-size: 2.1rem;
-}
-
-.container-cart{
-  margin-left: 15rem;
-  margin-right: 15rem;
-  text-align: center; 
-  padding: 2rem 3rem;
-  border: 1.5px solid #C1A693;
-  border-radius: 5px;
-}
-
-.container-cart img{
-  width: 50%;
-  height: 50%;
-}
-.cartitems form{
-  text-align: center;
-  position: relative;
-}
-#cartProduct{
-  color: #4CAF50;
-  font-size: 1.2rem;
-}
-
-.icon-container img{
-  padding: 5px 15px;
-  font-size: 24px;
-  width: 100px;
-  height: auto;
-}
-#acceptedcards{
-  color: #000;
-  font-size: 1.05rem;
-}
-
-.thank h5, .Checkout h3{
-  text-align: center;
-}
-/*combine with lexi's payment form*/
-
-.container-payment{
-  margin-left: 15rem;
-  margin-right: 15rem;
-  margin-top: 2rem;
-  text-align: center;
-/*  background-color: #C1A693;*/  
-  padding: 15px 20px 15px 20px;
-  border: 1.5px solid #C1A693;
-  border-radius: 5px;
-}
-.container-payment label{
-  font-size: 1.2rem;
-}
-
-/*set the payment form to be responsive  ----- .col-50
-*/
-.col-50{
-  padding: 0 16px;
-}
-
-.btnPay{
-  background-color: rgb(0,200,30);
-  color: lightgrey;
-  font-size: 1.2rem;
-  margin: 10px 0;
-  padding: 12px;
-  border:none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.btnPay:hover, .btnPay:focus{
-  background-color: #4CAF50;
-  text-decoration-color: #EFEEEA;
-}
-
-/*---contact page----*/
-.contact{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.contact div{
-  padding:1em 2em;
-  display: flex;
-  align-items: center;
-  flex-direction: column ;
-  justify-content: center;
-  max-width: 80%;
-  text-align: left;
-}
-.contact h2 h5 p{
-  padding: 1em 1em;
-  align-items: flex-start;
-}
-
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-
-.col-20 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-}
-
-.col-80 {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
-}
-
-.col-20,.col-80 {
-  padding: 0 16px;
-}
-.contact img {
-  min-width: 80%;
-  max-width:100%;
-
-}
-
-
-.container {
-  padding: 5px 20px 15px 20px;
-
-}
-
-
 /*----------footer-----------*/
 #citations{
   margin-top:  7em;
@@ -729,7 +429,7 @@ a img:hover, a img:focus{
   font-size: 0.85rem;
 }
 
-footer{
+/*footer{
   width:100%;
   background-color: #222;
   padding: 10px 0px;
@@ -738,6 +438,30 @@ footer{
   color: #fff;
   text-align: center;
   font-size: 0.85rem;
+}*/
+
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #3541f5;
+   padding-bottom: 1rem;
+   padding-left: 20rem;
+}
+
+footer a{
+  display: inline-block;
+  padding-right: 0.5rem;
+  text-decoration: none;
+  color: #3541f5;
+}
+
+footer a:hover, footer a:focus{
+  color: #222455;
 }
 
 /*Citations*/
