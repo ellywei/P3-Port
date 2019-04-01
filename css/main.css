@@ -55,9 +55,15 @@ body {
   padding:2rem 2rem;
 }
 
-
-
 /*navigation bar styling*/
+
+/*fixed navigation bar for pages other than home page*/
+#FixedNav{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+/*  width: 100%;*/ /* Full width */
+}
+
 .navigation{
   display: flex;
   align-items: flex-start;
@@ -69,16 +75,12 @@ body {
   padding-top: 2rem;
   padding-bottom: 0.5rem;
 
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-/*  width: 100%;*/ /* Full width */
+  overflow: hidden;
+  text-decoration: none;
 }
 
 .navigation a{
   text-decoration: none;
-}
-
-nav a{
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
   line-height: 20px;
@@ -88,20 +90,44 @@ nav a{
   padding: 10px 10px;
 }
 
-nav a:hover, focus{
+.navigation a: hover, focus{
   color: #222455;
   text-decoration: none;
 }
+.navigation a: active{
+  color: #222455;
+  text-decoration: none;
+}
+
+.navigation .icon {
+  display: none;
+}
+
+
+/*nav a{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  display: block;
+  letter-spacing:0.8px;
+  color: #3541f5;
+  padding: 10px 10px;
+}*/
+
+/*nav a: hover, focus{
+  color: #222455;
+  text-decoration: none;
+}*/
 
 .active{
   color: #222455;
   text-decoration: none;  
 }
 
-nav a:active{
+/*nav a: active{
   color: #222455;
   text-decoration: none;  
-}
+}*/
 
 /*headings styling*/
 
