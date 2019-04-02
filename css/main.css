@@ -6,7 +6,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 *, *:before, *:after {
@@ -74,8 +73,6 @@ body {
   padding-left: 2rem;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
-
-  overflow: hidden;
   text-decoration: none;
 }
 
@@ -88,6 +85,9 @@ body {
   letter-spacing:0.8px;
   color: #3541f5;
   padding: 10px 10px;
+  margin-top:5px;
+  margin-bottom:5px;
+
 }
 
 .navigation a: hover, focus{
@@ -415,46 +415,6 @@ section {
 
 }
 
-.col-25{
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  background-color: rgba(0, 0, 0, 0.8);
-  font-size: 0.9rem;
-  color: #fff;
-  text-align: center;
-}
-
-.col-25 nav a{
-  color: #fff;
-}
-
-.col-25 nav a:hover, focus{
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-
-/*#indexfooter-container{
-  width: 100%;
-  position:absolute;
-  bottom: 0;
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-}*/
-
-#indexfooter{
-  width: 100%;
-  background-color: #222;
-  padding: 10px 0px;
-  position: absolute;
-  bottom: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 0.85rem;
-}
-
 /*footer{
   width:100%;
   background-color: #222;
@@ -480,7 +440,6 @@ footer{
 }
 
 footer a{
-  display: inline-block;
   padding-right: 0.5rem;
   text-decoration: none;
   color: #3541f5;

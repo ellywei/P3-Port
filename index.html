@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elly Wei</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- hamburger menu icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
 
   </head>
 
   <body class="index">    
-      <div class = "navigation">
-          <nav>                   
+      <div class = "navigation" id = "homeNav">
               <a href="project1.html">Branding Design</a>       
               <a href="project2.html">Magazine Layout</a>
               <a href="about.html">About</a>
-<!--               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
-              </a> -->
-          </nav>
+              </a>
       </div>
 
       <div class="homeContainer">
@@ -32,24 +32,25 @@
         </div>
       </div>
 
-            <div class="col-25">
-              <nav>
-                <a href="https://github.com/ellywei/IAT339P2.git">Repository</a> 
-                <a href="style_guide.html">Style guide</a> 
-                <a href="citations.html">Citation</a>
-              </nav>
-            </div>
-      <!-- the hamberger menu -->      
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-  
+
+        <footer>
+              <a href="index.html">&copy; <script>document.write("Elly Wei, "+new Date().getFullYear());</script>. <a/> 
+              <a href="https://portfolio-style-guide-7f18b0.webflow.io"> Style Guide</a>
+              <a href="https://portfolio-style-guide-7f18b0.webflow.io"> Citations</a>
+              <a href="https://github.com/ellywei/P3-Port"> GitHub </a>
+      </footer>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("homeNav");
+    if (x.className == "navigation") {
+      x.className += " responsive";
+    } else {
+      x.className = "navigation";
+    }
+  }
+</script>
+
   </body>
 </html>
