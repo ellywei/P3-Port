@@ -64,24 +64,6 @@
     flex-direction: column;
   }
 
-/*  .navigation a {display: none;}
-  .navigation a.icon {
-    float: left;
-  }
-*/
-  #navOptions{
-    padding-top: 1rem;
-  }
-
-  #homepageNav #navOptions nav a{
-    display: flex;
-    align-items: right;
-    flex-direction: row;
-    text-align: right;
-    justify-content: flex-end;
-  }
-  
-
   /*homepage responsiveness*/
   .homeContainer{
     display: flex;
@@ -128,6 +110,10 @@
   .styleGuide p{
 /*    max-width: 100%;
 */    min-width: 90%;
+  }
+
+  .styleGuide img{
+    min-width: 100%;
   }
 
   h2{

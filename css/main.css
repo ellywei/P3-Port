@@ -83,10 +83,10 @@ body {
   margin-bottom:2px;
 }
 
-.navigation a: hover{
+.navigation a:hover{
   color: #222455;
 }
-.navigation a: active{
+.navigation a:active{
   color: #222455;
 }
 
@@ -277,7 +277,7 @@ section {
 
  #aboutText{
   padding-top: 3rem; 
-  max-width: 70%;
+  max-width: 90%;
  }
 
 #aboutContainer{
@@ -290,7 +290,7 @@ section {
 
 
 #aboutContainer img{
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
  }
 
