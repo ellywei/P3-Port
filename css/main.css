@@ -110,9 +110,8 @@ body {
   text-decoration: none;
 }*/
 
-.active{
+.navigation .active{
   color: #222455;
-  text-decoration: none;  
 }
 
 /*nav a: active{
