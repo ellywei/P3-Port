@@ -94,6 +94,10 @@
 */    min-width: 90%;
   }
 
+  .project h2{
+   min-width: 95%;
+  }
+
   /*style guide page responsiveness*/
   .inLine2{
       display: flex;
